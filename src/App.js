@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Switch from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import logo from './logo.svg';
 import './App.css';
 
-import './components/GameScreen';
-import './components/IntroScreen';
+import GameScreen from './components/GameScreen';
+import IntroScreen from './components/IntroScreen';
 
 
 class App extends Component {

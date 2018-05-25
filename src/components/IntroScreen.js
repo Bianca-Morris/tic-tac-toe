@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, withRouter } from 'react-router-dom';
 
-class IntroScreen extends React.Component {
-    render() {
-      <div>
-        Welcome to tic-tac-toe!.
-        <Link to='/game'><button>Start a game!</button></Link>
-      </div>
-    }
-}
+const IntroScreen = () => (
+    <div>
+      Welcome to tic-tac-toe!.
+      <Link to='/game'>Start a game!</Link>
+    </div>
+)
 
-default export IntroScreen;
+
+export default withRouter(IntroScreen);
